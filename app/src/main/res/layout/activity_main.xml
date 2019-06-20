@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              tools:context=".MainActivity"
+              android:orientation="vertical"
+              android:layout_margin="25dp">
+
+    <EditText
+            android:id="@+id/etNumber1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Number 1"
+            android:inputType="number"/>
+
+    <EditText
+            android:id="@+id/etNumber2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Number 2"
+            android:inputType="number"/>
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+        <Button
+                android:id="@+id/btadd"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="+"/>
+
+        <Button
+                android:id="@+id/btsub"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="-"/>
+        <Button
+                android:id="@+id/btmul"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="*"/>
+        <Button
+                android:id="@+id/btdiv"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="/"/>
+    </LinearLayout>
+    <TextView
+            android:id="@+id/txtr"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_margin="20dp"
+            android:text="Answer"
+            android:gravity="center"
+
+    />
+</LinearLayout>
